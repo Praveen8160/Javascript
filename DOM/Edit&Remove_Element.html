@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        
+    </ul>
+</body>
+<script>
+    function addele(lang){
+        const newlist=document.createElement("li")
+        newlist.innerHTML=`${lang}`
+        document.querySelector('ul').appendChild(newlist)
+    }
+    addele("javascript")
+    addele("javascript")
+    
+    function addsecli(lang){
+        const newlist=document.createElement("li")
+        newlist.appendChild(document.createTextNode(lang))
+        document.querySelector('ul').appendChild(newlist)
+    }
+    addsecli("python")
+    addsecli("java")
+
+
+    // _______________________________Edit_________________________________________
+
+    const newlist=document.querySelector('li:first-child')
+    newlist.innerHTML="first"
+
+    const newlist2=document.querySelector('li:nth-child(2)')
+    newlist2.textContent="second"
+
+    const newlist3=document.querySelector('li:last-child')
+    newlist3.outerHTML="<li>fourth</li>"
+
+    const newlist4=document.querySelector('li:nth-child(3)')
+    const newli=document.createElement("li")
+    newli.textContent="third"
+    newlist4.replaceWith(newli)
+
+
+     // _______________________________remove_________________________________________
+
+     const newlist5=document.querySelector('li:nth-child(2)')
+     newlist5.remove()
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    async function pic(){
+    let response = await fetch('https://tse2.mm.bing.net/th?id=OIP.iAhcp6m_91O-ClK79h8EQQHaFj&pid=Api&P=0&h=180');
+
+    let blob = await response.blob(); // download as Blob object
+    console.log(blob)
+    // create <img> for it
+    let img = document.createElement('img');
+    img.style = 'position:fixed;top:10px;left:10px;width:600px;height:700px';
+    document.body.append(img);
+
+    // show it
+    img.src = URL.createObjectURL(blob);
+
+    setTimeout(() => { // hide after three seconds
+    img.remove();
+    URL.revokeObjectURL(img.src);
+    }, 3000);
+}
+pic()
+</script>
+</html>

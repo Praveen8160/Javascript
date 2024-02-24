@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1 id="heading" class="head">i am heading</h1>
+        <p >Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li class="list">first</li>
+            <li class="list">second</li>
+            <li class="list">third</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+______________________________html collection___________________________________________
+
+<!-- when we select multiple tag with help of classname than it give value in htmlcollection and it is not array -->
+const a=document.getElementsByClassName('.list')
+
+<!-- first we have to convert in array -->
+let b=Array.from(a)
+
+<!-- after converting we can travel with help of array method -->
+b.forEach((ele)=>{
+    ele.style.color="yellow"
+})
+
+__________________________nodelist_____________________________________
+ <!-- when we select multiple tag with help of classname than it give value in nodelist and it is not array but is gives foreach method -->
+let a=document.querySelectorAll('li')
+
+a.forEach((ele)=>{
+    ele.style.backgroundColor="yellow"
+})

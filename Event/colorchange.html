@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        height: 200px;
+        width: 300px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <button id="btn">change color</button>
+</body>
+<script>
+    document.getElementById('btn').addEventListener('click',(e)=>{
+        document.body.style.backgroundColor=`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255}`
+        // console.log(e.target)
+    })
+</script>
+</html>

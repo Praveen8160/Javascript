@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="main">
+        <h1>Language List</h1>
+        <ul id="ulist">
+            <li id="java"><p id="f">java</p></li>
+            <li id="javascript"><p id="s">javascript</p></li>
+            <li id="python"><p id="t">python</p></li>
+            <li id="c++"><p id="fo">c++</p></li>
+            <li id="c#"><p id="fi">c#</p></li>
+        </ul>
+        <a id="google" href="https://google.com">Google</a>
+    </div>
+</body>
+<script>
+    // document.getElementById('javascript').onclick=function (){
+    //     alert('this is not good way to handle onclick event')
+    // }
+
+    // document.getElementById('main').addEventListener('click',(e)=>{
+    //     console.log("whole div event execute")
+    // },false)
+
+    // document.getElementById('ulist').addEventListener('click',(e)=>{
+    //     console.log("whole ul event execute")
+    //     e.stopPropagation() //it will stop the execute other events
+    // },false)
+
+    // document.getElementById('java').addEventListener('click',(e)=>{
+    //     console.log("particular li event is execute")
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',(e)=>{
+    //     e.preventDefault()//it will stop to redirect to other page and stop to submitting data to other page 
+    //     e.stopPropagation()
+    // },false)
+
+
+// ___________________________remove element onclick_____________________________________________
+
+
+    document.getElementById('ulist').addEventListener('click',function(e){
+        console.log(e.target)
+        e.target.parentElement.remove()
+        if(e.target.tagName=="P")
+        {
+            // console.log(e.target.tagName)
+            const removeit=e.target.parentElement
+            removeit.parentNode.removeChild(removeit)
+            // removeit.remove()
+        }
+    },false)
+</script>
+</html>
+
+
+// type,timestamp,defaultPrevented
+//target,toElement,srcElement,currentTarget
+//ClientX,clientY,screenX,screenY
+//altkey,ctrlkey,shiftkey,keycode
