@@ -16,13 +16,13 @@ const obj=[20,30,40]
 
 
 // ____________________foreach in Object_____________________________________
-// const obj = {
+// const obj2= {
 //     name: 'praveen',
 //     rank: 'HOD'
 //   };
 
-//   Object.keys(obj).forEach(key => {
-//     console.log(key, obj[key]);
+//   Object.keys(obj2).forEach(key => {
+//     console.log(key, obj2[key]);
 //   });
 
 // ____________________foreach in Object inside array__________________________
@@ -56,12 +56,12 @@ const obj=[20,30,40]
 // console.log(ret)
 
 
-const obj2=[]
-obj.forEach(function (element){
-    if(element>20)
-    {
-        obj2.push(element)
-    }
-}
-)
-console.log(obj)
+// const obj2=[]
+// obj.forEach(function (element){
+//     if(element>20)
+//     {
+//         obj2.push(element)
+//     }
+// }
+// )
+// console.log(obj)

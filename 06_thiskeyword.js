@@ -12,7 +12,7 @@
 // one()
 
 // const two=()=>{
-//     console.log(this)//we cant use this keyword in arrow function
+//     console.log(this)  //we cant use this keyword in arrow function
 // }
 // two()
 

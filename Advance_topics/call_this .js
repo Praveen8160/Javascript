@@ -38,7 +38,7 @@
 // function a()
 // {
 //     const c=20
-//     // console.log(this) //refer globel
+//     // console.log(this)                                      //refer globel
 //     function b(f){
 //         this.f=f
 //         // console.log(f)
@@ -54,9 +54,9 @@
 
 // const a={
 //     name:"raj",
-//     fi:this, //it refer globel store {} value
+//     fi:this,                                  //it refer globel store {} value
 //     secon:function(){
-//         console.log(this) its refer to {a} object
+//         console.log(this)                       its refer to {a} object
 //     }
 // }
 // console.log(a.fi) = {}

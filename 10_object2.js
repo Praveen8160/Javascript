@@ -3,7 +3,7 @@
 // obj3={3:"e",4:"4"}
 
 // const obj5=Object.assign({},obj1,obj2,obj3)
-// const obj4={...obj1,...obj2,...obj3} //spread operator
+// const obj4={...obj1,...obj2,...obj3}                      //spread operator
 // console.log(obj4)
 // console.log(obj5)
 
@@ -13,8 +13,8 @@ obj1.name="praveen"
 obj1.age=18
 obj1.login=false
 
-// console.log(Object.keys(obj1)); // output gives in array form
-// console.log(Object.values(obj1)); // output gives in array form
+// console.log(Object.keys(obj1));                   // output gives in array form
+// console.log(Object.values(obj1));                 // output gives in array form
 console.log(obj1.hasOwnProperty("age"))
 
 const {name:n}=obj1  //destructure

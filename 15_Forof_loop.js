@@ -18,10 +18,16 @@
 // }
 // console.log(map)
 
-// const obj={
-//     a:20,
-//     b:30
-// }
+const obj={
+    a:20,
+    b:30
+}
+
+
 // for (const [mapkey,mapval] of obj) {
-//     console.log(mapkey,"-:",mapval) //we cant use forof loop in object
+//     console.log(mapkey,"-:",mapval)                               //we cant use forof loop direct in object
 // }
+
+for (const [mapkey,mapval] of Object.entries(obj)){
+    console.log(mapkey,"-:",mapval)  
+}

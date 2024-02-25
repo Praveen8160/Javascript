@@ -13,7 +13,7 @@ function user(username,score){
     this.score=score
     return this
 }
-user.prototype.printme=function(){
+Object.prototype.printme=function(){
     console.log(`score is ${this.score}`)
 }
 user.prototype.incremenet=function(){
@@ -23,4 +23,4 @@ user.prototype.incremenet=function(){
 let user1=new user("praveen",20)
 let user2=new user("raj",30)
 user1.printme()
-user1.incremenet()
+// user1.incremenet()
