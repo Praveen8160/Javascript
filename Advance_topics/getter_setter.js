@@ -1,7 +1,7 @@
 
 // when user want to access property value and we don't want to give the value of that property or give after update that value than we use get and set method
 
-// we should define voth method get and set else compiler gives error
+// we should define both method get and set else compiler gives error
 
 // when we define property code will autometically make get and set method we just use that method
 
